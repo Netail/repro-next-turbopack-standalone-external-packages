@@ -1,0 +1,17 @@
+{
+    "$schema": "./node_modules/turbo/schema.json",
+    "ui": "tui",
+    "tasks": {
+        "build": {
+            "outputs": [
+                "dist/**",
+                ".next/**",
+                "!.next/cache/**",
+                "!.next/dev/**"
+            ],
+            "env": [
+                "NODE_ENV"
+            ]
+        },
+    }
+}

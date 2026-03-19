@@ -1,0 +1,6 @@
+{
+    "name": "@repo/remote-cache",
+    "dependencies": {
+        "lru-cache": "^11.2.7"
+    }
+}
