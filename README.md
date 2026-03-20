@@ -1,9 +1,10 @@
 # repro-next-turbopack-standalone-external-packages
 
 1. Have Docker installed & running
-2. Run `sh repro.sh` & wait for the build + docker image to finish
-3. Run the `test-app:0.1.0` docker image
-4. Check logs and see the following:
+2. `pnpm install`
+3. Run `sh repro.sh` & wait for the build + docker image to finish
+4. Run the `test-app:0.1.0` docker image
+5. Check logs and see the following:
 
     ```sh
     Failed to prepare server Error: An error occurred while loading instrumentation hook: Failed to load external module @opentelemetry/instrumentation-6d4cbf8d0d66c550: Error: Cannot find module '@opentelemetry/instrumentation-6d4cbf8d0d66c550'
