@@ -7,7 +7,7 @@ RUN addgroup --system --gid 999 nodejs && \
 
 COPY --chown=nextjs:nodejs /.next/standalone/out ./
 COPY --chown=nextjs:nodejs /.next/static ./apps/test-app/.next/static
-# COPY --chown=nextjs:nodejs /.next/node_modules ./apps/test-app/node_modules
+# COPY --chown=nextjs:nodejs /.next/node_modules ./apps/test-app/.next/node_modules
 
 # Set the correct permission for pre-render cache
 RUN chown -R nextjs:nodejs ./apps/test-app/.next
